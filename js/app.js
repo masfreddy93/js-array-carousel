@@ -41,13 +41,16 @@ rightArrow.addEventListener('click', function() {
     // fare in modo che ad ogni click l'immagine cambi
     // dovrei riuscire a "far muovere" la classe active
     //dovrei per prima cosa RIMUOVERLA dall' elemento in cui era e AGGIUNGERLA all'elemento successivo
+    
+    // for(let i=10; i<40; i++){
+
     const slideAttiva = slideActiveElements[currentIndex];
     slideAttiva.classList.remove('active');
     const slideSuccessiva = slideActiveElements[currentIndex+1];
-    slideSuccessiva.classList.add('active');
+    slideSuccessiva.classList.add('active');  
 
     //contatore che cresce
-    currentIndex++;
+    currentIndex++; 
 })
 
 //FRECCIA SX
@@ -60,6 +63,3 @@ leftArrow.addEventListener('click', function() {
 
     currentIndex--;
 })
-
-
-
