@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    
+}
+
+.slide.active {
+    display: block;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: brown;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    cursor: pointer;
+    opacity: 0.8;
+} 
